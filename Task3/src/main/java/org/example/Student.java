@@ -13,7 +13,7 @@ public class Student extends Person
     }
     @Override
     public boolean addCourse(String course) {
-        if(currentCourses.contains(course) || passedCourses.contains(course))
+        if(passedCourses.contains(course) || currentCourses.contains(course))
         {
             currentCourses.add(course);
             return true;
